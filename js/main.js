@@ -142,17 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ring.style.transform = `translate(calc(-50% + ${currentX * factor}px), calc(-50% + ${currentY * factor}px))`;
       });
 
-      gcards.forEach((card, idx) => {
-        const factor = (idx + 1) * 15;
-        card.style.marginLeft = `${currentX * factor}px`;
-        card.style.marginTop  = `${currentY * factor}px`;
-      });
-
-      hOrbs.forEach((orb, idx) => {
-        const factor = (idx + 1) * 35;
-        orb.style.transform = `translate(${currentX * factor}px, ${currentY * factor}px)`;
-      });
-
       requestAnimationFrame(updateParallax);
     };
     requestAnimationFrame(updateParallax);
@@ -252,27 +241,26 @@ document.addEventListener('DOMContentLoaded', () => {
   if (cursor && follower && window.matchMedia('(hover: hover)').matches) {
     let mx = window.innerWidth / 2;
     let my = window.innerHeight / 2;
+    let cx = mx, cy = my;
     let fx = mx, fy = my;
 
-    cursor.style.left = mx + 'px';
-    cursor.style.top  = my + 'px';
-    follower.style.left = mx + 'px';
-    follower.style.top  = my + 'px';
-
     window.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.left = mx + 'px';
-      cursor.style.top  = my + 'px';
+      mx = e.clientX; 
+      my = e.clientY;
     });
 
-    const rafFollower = () => {
-      fx += (mx - fx) * 0.10;
-      fy += (my - fy) * 0.10;
-      follower.style.left = fx + 'px';
-      follower.style.top  = fy + 'px';
-      requestAnimationFrame(rafFollower);
+    const updateCursorPosition = () => {
+      cx += (mx - cx) * 0.30;
+      cy += (my - cy) * 0.30;
+      cursor.style.transform = `translate3d(${cx}px, ${cy}px, 0) translate(-50%, -50%)`;
+
+      fx += (mx - fx) * 0.08;
+      fy += (my - fy) * 0.08;
+      follower.style.transform = `translate3d(${fx}px, ${fy}px, 0) translate(-50%, -50%)`;
+
+      requestAnimationFrame(updateCursorPosition);
     };
-    requestAnimationFrame(rafFollower);
+    requestAnimationFrame(updateCursorPosition);
 
     const clickables = document.querySelectorAll('a, button, [role="tab"], .gcard');
     clickables.forEach(el => {

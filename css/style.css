@@ -168,10 +168,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .cursor,
 .cursor-follower {
   position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
   z-index: 9999;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
 }
 
 .cursor {
