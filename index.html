@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abdullah Bin Yousaf — IT Student & Software Developer from Lahore, Pakistan. Building AI-powered SaaS, automation tools, and modern web applications that solve real business problems." />
-  <meta name="keywords" content="Abdullah Bin Yousaf, Software Developer, AI Developer, SaaS, Automation, Load To Cash, Lahore Pakistan, React Developer, Python Developer" />
+  <meta name="description" content="Abdullah Bin Yousaf — IT Student & Software Developer. Building practical software solutions through AI, automation, and modern web technologies to solve real business problems." />
+  <meta name="keywords" content="Abdullah Bin Yousaf, Software Developer, AI, SaaS, Automation, Load To Cash, Lahore, React, Python" />
   <meta name="author" content="Abdullah Bin Yousaf" />
-  <meta property="og:title" content="Abdullah Bin Yousaf — Software Developer & AI Builder" />
+  <meta property="og:title" content="Abdullah Bin Yousaf — Software Developer" />
   <meta property="og:description" content="Building practical software solutions through AI, automation, and modern web technologies to solve real business problems." />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#080808" />
-  <title>Abdullah Bin Yousaf — Software Developer & AI Builder</title>
+  <title>Abdullah Bin Yousaf — Software Developer</title>
 
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-
+  
   <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
 
@@ -33,28 +26,22 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       CUSTOM CURSOR
-  ============================================================ -->
+  <!-- Custom Cursor -->
   <div class="cursor" id="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
-  <!-- ============================================================
-       LOADING SCREEN
-  ============================================================ -->
+  <!-- Loading Screen -->
   <div id="loader" class="loader" role="status" aria-label="Loading">
     <div class="loader-inner">
       <div class="loader-monogram">AY</div>
       <div class="loader-bar-wrap">
         <div class="loader-bar" id="loaderBar"></div>
       </div>
-      <p class="loader-label">Loading experience</p>
+      <p class="loader-label">Initializing Portfolio</p>
     </div>
   </div>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
+  <!-- Navigation -->
   <header id="navbar" class="navbar" role="banner">
     <div class="nav-container">
       <a href="#hero" class="nav-logo" aria-label="Abdullah Bin Yousaf — Home">
@@ -71,7 +58,7 @@
       </nav>
 
       <a href="mailto:abdullahbinyousaf20@gmail.com" class="btn-nav" id="navCta">
-        Let's Talk <span aria-hidden="true">→</span>
+        Let's Talk →
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -96,11 +83,8 @@
 
   <main>
 
-    <!-- ============================================================
-         HERO SECTION
-    ============================================================ -->
+    <!-- Hero Section -->
     <section id="hero" class="hero" aria-labelledby="heroName">
-      <!-- Background effects -->
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-aurora" aria-hidden="true">
         <div class="aurora-orb orb-1"></div>
@@ -110,7 +94,6 @@
       <div class="mouse-spotlight" id="mouseSpotlight" aria-hidden="true"></div>
 
       <div class="hero-container">
-
         <!-- Text Content -->
         <div class="hero-content">
           <div class="hero-badge" role="status">
@@ -133,8 +116,7 @@
           </div>
 
           <p class="hero-tagline">
-            Building practical software solutions through AI, automation,
-            and modern web technologies to solve real business problems.
+            Building practical software solutions through AI, automation, and modern web technologies to solve real business problems.
           </p>
 
           <div class="hero-location">
@@ -163,7 +145,7 @@
             <div class="stat-sep" aria-hidden="true"></div>
             <div class="stat-item" role="listitem">
               <span class="stat-num">3+</span>
-              <span class="stat-label">Projects Delivered</span>
+              <span class="stat-label">Projects Shipped</span>
             </div>
             <div class="stat-sep" aria-hidden="true"></div>
             <div class="stat-item" role="listitem">
@@ -173,35 +155,36 @@
           </div>
         </div>
 
-        <!-- Visual / Avatar -->
+        <!-- Premium Avatar Container -->
         <div class="hero-visual" aria-hidden="true">
-          <div class="avatar-ring-outer"></div>
-          <div class="avatar-ring-inner"></div>
-          <div class="avatar-frame">
-            <div class="avatar-initials">
-              <span class="avatar-text">AY</span>
-              <span class="avatar-sub">Abdullah Bin Yousaf</span>
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-image-container">
+                <img src="assets/images/abdullah.png" alt="Abdullah Bin Yousaf Portrait" class="avatar-img" />
+              </div>
+              <div class="avatar-card-footer">
+                <div class="acf-info">
+                  <span class="acf-title">Abdullah Bin Yousaf</span>
+                  <span class="acf-sub">Lahore, Pakistan</span>
+                </div>
+                <div class="acf-status">
+                  <span class="acf-pulse"></span>
+                  <span>Online</span>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Floating tech badges -->
-          <div class="float-badge badge-react">⚛️ React</div>
-          <div class="float-badge badge-python">🐍 Python</div>
-          <div class="float-badge badge-ai">🤖 AI / Gemini</div>
-          <div class="float-badge badge-ltc">🚀 Load To Cash</div>
         </div>
-
       </div>
 
-      <!-- Scroll indicator -->
       <div class="scroll-hint" aria-hidden="true">
         <div class="scroll-line"></div>
         <span>Scroll to explore</span>
       </div>
     </section>
 
-    <!-- ============================================================
-         FROM LOGISTICS TO SOFTWARE
-    ============================================================ -->
+    <!-- From Logistics to Software -->
     <section id="journey" class="section journey-section" aria-labelledby="journeyTitle">
       <div class="container">
         <div class="section-eyebrow">My Story</div>
@@ -211,12 +194,11 @@
         </h2>
 
         <div class="journey-lead">
-          <p>Dispatch is my current business. Software development is my career direction. Working inside logistics didn't just teach me operations — it showed me precisely where automation belongs and why it matters. That clarity is rare. I have it because I lived the problem.</p>
+          <p>My dispatch business provided me with real-world problems. Software development is where I build the solutions. Operating inside logistics exposed me to inefficiencies firsthand—not through theories, but through manual tasks that wasted hours. My goal is to automate these operations using software and AI.</p>
         </div>
 
         <!-- Timeline -->
         <div class="timeline" role="list">
-
           <div class="timeline-item" role="listitem">
             <div class="timeline-left">
               <div class="timeline-node">
@@ -226,9 +208,9 @@
               <div class="timeline-year">2023</div>
             </div>
             <div class="timeline-body">
-              <div class="tl-tag">The Beginning</div>
+              <div class="tl-tag">Education</div>
               <h3>Started IT Degree</h3>
-              <p>Enrolled in Bachelor of Information Technology at the University of Lahore. Discovered strong intuition for programming logic, data structures, and systematic problem-solving.</p>
+              <p>Began studying Bachelor of Information Technology at the University of Lahore. Gained solid grounding in coding logic, OOP, data structures, and algorithms.</p>
             </div>
           </div>
 
@@ -241,9 +223,9 @@
               <div class="timeline-year">2023</div>
             </div>
             <div class="timeline-body">
-              <div class="tl-tag">Real World</div>
-              <h3>Dispatcher — Inside the Machine</h3>
-              <p>Entered the US trucking logistics industry as a dispatcher. Managed loads, coordinated carriers, tracked freight manually. The inefficiency was immediate and undeniable — every task that should take seconds was taking minutes.</p>
+              <div class="tl-tag">Industry Context</div>
+              <h3>Dispatcher Operations</h3>
+              <p>Entered US logistics as a dispatcher. Coordinated loads, managed freight details, and handled dispatch tasks. Observed the potential for operations to be simplified through software.</p>
             </div>
           </div>
 
@@ -257,8 +239,8 @@
             </div>
             <div class="timeline-body">
               <div class="tl-tag">Business Depth</div>
-              <h3>Freight Broker — Learning the Business Model</h3>
-              <p>Worked with Advance Way Logistics and Critical Expedite Freight. Understood margins, carrier relationships, broker negotiations, and how money moves in logistics. This is when I started asking: "Why isn't this automated?"</p>
+              <h3>Freight Brokerage</h3>
+              <p>Worked with Advance Way Logistics and Critical Expedite Freight. Handled load tracking, client negotiations, and carrier relationships, learning how money flows within logistics.</p>
             </div>
           </div>
 
@@ -272,8 +254,8 @@
             </div>
             <div class="timeline-body">
               <div class="tl-tag">First Builds</div>
-              <h3>Started Building Websites</h3>
-              <p>Delivered professional websites for logistics businesses — translating real business requirements into functional digital products. Learned to work with clients, understand their goals, and ship work that creates actual business impact.</p>
+              <h3>Client Web Applications</h3>
+              <p>Collaborated to plan and build websites for logistics operations, translating operational requirements into clean frontend designs and improving user flows.</p>
             </div>
           </div>
 
@@ -286,9 +268,9 @@
               <div class="timeline-year">2025</div>
             </div>
             <div class="timeline-body">
-              <div class="tl-tag">Multilingual Work</div>
-              <h3>Remote Interpreter — Dals, UK</h3>
-              <p>Began providing professional Urdu ↔ English interpretation for UK clients. Developed precision, cross-cultural communication, and the discipline of remote professional work.</p>
+              <div class="tl-tag">Communication</div>
+              <h3>Remote Interpreter</h3>
+              <p>Provided remote Urdu-to-English translation services for UK-based clients, developing clear communication skills under professional standards.</p>
             </div>
           </div>
 
@@ -301,9 +283,9 @@
               <div class="timeline-year">2026</div>
             </div>
             <div class="timeline-body">
-              <div class="tl-tag tl-tag-active">Now — The Product</div>
-              <h3>Built Load To Cash</h3>
-              <p>Identified the exact pain: dispatchers waste hours on repetitive manual work every week. Built an AI-powered SaaS platform to solve it. Currently live in beta with real users providing feedback that shapes every development decision.</p>
+              <div class="tl-tag tl-tag-active">Active Product</div>
+              <h3>Launched Load To Cash</h3>
+              <p>Built an AI-powered SaaS platform to automate dispatch operations. Currently testing with 4 active users to iterate features based on real feedback.</p>
             </div>
           </div>
 
@@ -315,58 +297,48 @@
               <div class="timeline-year">→</div>
             </div>
             <div class="timeline-body">
-              <div class="tl-tag">The Mission</div>
-              <h3>AI, SaaS &amp; Business Automation</h3>
-              <p>Building software that solves real operational problems across multiple industries. Combining deep business understanding with modern technology to create impactful, sustainable digital products.</p>
+              <div class="tl-tag">The Goal</div>
+              <h3>AI, SaaS &amp; Automation</h3>
+              <p>Focusing on building software that solves operational bottlenecks across industries. Applying logic and technology to streamline workflows.</p>
             </div>
           </div>
-
         </div>
 
-        <!-- Philosophy pull-quote -->
         <blockquote class="philosophy-quote">
-          <p>"Dispatch is my current business. Software is my future. Logistics taught me where automation belongs. Now I'm building it — and it's solving problems I've personally experienced."</p>
+          <p>"Working in logistics showed me where software is needed. Instead of accepting slow workflows, I built Load To Cash. My goal is to design software that makes businesses more efficient."</p>
           <footer>— Abdullah Bin Yousaf</footer>
         </blockquote>
-
       </div>
     </section>
 
-    <!-- ============================================================
-         ABOUT ME
-    ============================================================ -->
+    <!-- About Me -->
     <section id="about" class="section about-section" aria-labelledby="aboutTitle">
       <div class="container">
         <div class="about-layout">
-
           <div class="about-left">
-            <div class="section-eyebrow">About Me</div>
+            <div class="section-eyebrow">Philosophy</div>
             <h2 class="section-title" id="aboutTitle">
-              I understand the<br/>
-              <span class="text-accent">problem first.</span>
+              Solving business problems<br/>
+              <span class="text-accent">first.</span>
             </h2>
 
             <p class="about-lead">
-              I'm Abdullah — an IT student from Lahore who believes the best software starts with understanding the problem deeply enough that the solution becomes obvious. The code is secondary.
+              I believe software is a tool to solve business problems, not just write code. Understanding the user's workflow is the most critical step of development.
             </p>
 
             <p class="about-body">
-              My path wasn't conventional. While studying IT, I entered the logistics industry and operated inside it — not from the outside. I dispatched freight, negotiated rates, managed carriers, coordinated loads. I lived the inefficiency that software should solve.
+              My logistics experience taught me how real businesses operate daily. Operating loads, managing invoices, and dealing with carriers directly showed me the exact inefficiencies that need automation.
             </p>
 
             <p class="about-body">
-              That experience led me to build Load To Cash — not as a portfolio project, but because dispatchers I know waste hours every week on tasks a well-built system handles in seconds. That's the difference between building something and building something that matters.
-            </p>
-
-            <p class="about-body">
-              I'm not claiming to be a senior engineer. I'm a fast learner with strong fundamentals, real business context, and the ability to translate operational problems into working software. When I commit to learning something, I'm usually comfortable within weeks — not because I memorize syntax, but because my problem-solving logic is solid.
+              This practical insight led me to build Load To Cash. Instead of a theoretical project, it's designed to solve the manual work dispatchers go through. I learn technologies quickly because I focus on logic and application rather than syntax memorization.
             </p>
 
             <div class="about-links">
               <a href="#load-to-cash" class="btn-primary" id="aboutSeeWork">See My Work</a>
               <a href="https://github.com/abdullahh23" target="_blank" rel="noopener noreferrer" class="btn-outline" id="aboutGitHub">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                 </svg>
                 GitHub
               </a>
@@ -376,70 +348,90 @@
           <div class="about-right">
             <div class="traits-grid">
               <div class="trait-card" id="trait-1">
-                <div class="trait-icon" aria-hidden="true">🧠</div>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+                  </svg>
+                </div>
                 <h3>Problem Solver</h3>
-                <p>I start with the problem, not the technology. Understanding the "why" before writing a single line.</p>
+                <p>Analyzing operational loops to find bottlenecks before designing code.</p>
               </div>
               <div class="trait-card" id="trait-2">
-                <div class="trait-icon" aria-hidden="true">⚡</div>
-                <h3>Fast Learner</h3>
-                <p>Strong fundamentals mean I pick up new technologies quickly and apply them in real projects — not just tutorials.</p>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <h3>Logical Adaptability</h3>
+                <p>Picking up tools and frameworks quickly by focusing on underlying principles.</p>
               </div>
               <div class="trait-card" id="trait-3">
-                <div class="trait-icon" aria-hidden="true">🤖</div>
-                <h3>AI Explorer</h3>
-                <p>Actively integrating AI into real products. Currently using Google Gemini Flash in Load To Cash for document automation.</p>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  </svg>
+                </div>
+                <h3>AI Application</h3>
+                <p>Integrating models to automate manual tasks like data entry and information extraction.</p>
               </div>
               <div class="trait-card" id="trait-4">
-                <div class="trait-icon" aria-hidden="true">📦</div>
-                <h3>Product Mindset</h3>
-                <p>I think in features, user flows, and business impact — not just functions and variables.</p>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <h3>Product Planning</h3>
+                <p>Structuring user interfaces to align with actual, practical business logic.</p>
               </div>
               <div class="trait-card" id="trait-5">
-                <div class="trait-icon" aria-hidden="true">🔐</div>
-                <h3>Security Aware</h3>
-                <p>I design with security from day one. Authentication, data isolation, and access control are never afterthoughts.</p>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <h3>Security Awareness</h3>
+                <p>Writing backend logic with data isolation and strict authentication rules.</p>
               </div>
               <div class="trait-card" id="trait-6">
-                <div class="trait-icon" aria-hidden="true">🔄</div>
-                <h3>Continuous Improver</h3>
-                <p>Load To Cash is in active beta. I collect real feedback and ship improvements continuously. Growth is the default state.</p>
+                <div class="trait-svg-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                  </svg>
+                </div>
+                <h3>Iteration Cycle</h3>
+                <p>Collecting production feedback to refine features and address system bugs.</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         EXPERIENCE
-    ============================================================ -->
+    <!-- Experience -->
     <section id="experience" class="section exp-section" aria-labelledby="expTitle">
       <div class="container">
-        <div class="section-eyebrow">Experience</div>
+        <div class="section-eyebrow">Roles</div>
         <h2 class="section-title" id="expTitle">
-          Where I've <span class="text-accent">worked &amp; built</span>
+          Experience Summary
         </h2>
 
         <div class="exp-grid">
-
           <article class="exp-card exp-featured" id="exp-ltc">
             <div class="exp-card-inner">
               <div class="exp-top">
                 <div class="exp-monogram">LTC</div>
                 <div class="exp-info">
                   <h3>Founder &amp; Developer</h3>
-                  <span class="exp-company">Load To Cash</span>
+                  <span class="exp-company">Load To Cash SaaS</span>
                 </div>
                 <time class="exp-period" datetime="2026">2026 – Present</time>
               </div>
-              <p>Identified a real operational problem in the logistics industry and built an AI-powered SaaS solution from scratch. Responsible for product vision, architecture, UI/UX design, AI integration, database design, and continuous user-driven iteration.</p>
+              <p>Designed and built an AI-powered logistics portal to automate invoicing and carrier monitoring. Managed system architecture, state tracking, and DB integration.</p>
               <div class="exp-chips">
-                <span class="chip">SaaS Development</span>
-                <span class="chip">AI Integration</span>
-                <span class="chip">Product Planning</span>
-                <span class="chip">React + Supabase</span>
+                <span class="chip">SaaS Architecture</span>
+                <span class="chip">API Integration</span>
+                <span class="chip">React + TypeScript</span>
+                <span class="chip">Supabase</span>
               </div>
             </div>
           </article>
@@ -454,11 +446,11 @@
                 </div>
                 <time class="exp-period" datetime="2024">2024 – Present</time>
               </div>
-              <p>Managed carrier relationships and load negotiations. Contributed to the company's digital presence through front-end development, business analysis, and UI implementation.</p>
+              <p>Managed carrier relations and logistics logic. Contributed to planning the company website and clarifying structural layout demands.</p>
               <div class="exp-chips">
                 <span class="chip">Business Analysis</span>
-                <span class="chip">Web Development</span>
-                <span class="chip">Client Communication</span>
+                <span class="chip">Web Structure</span>
+                <span class="chip">UI Planning</span>
               </div>
             </div>
           </article>
@@ -473,11 +465,11 @@
                 </div>
                 <time class="exp-period" datetime="2024">2024</time>
               </div>
-              <p>Operated as freight broker while contributing to the company's digital presence through website planning, front-end development, and business requirement analysis.</p>
+              <p>Coordinated logistics operations. Planned site architecture and frontend visual adjustments to improve user interaction.</p>
               <div class="exp-chips">
-                <span class="chip">Freight Brokerage</span>
-                <span class="chip">UI Development</span>
-                <span class="chip">Business Planning</span>
+                <span class="chip">Frontend Tweaks</span>
+                <span class="chip">Logistics Workflow</span>
+                <span class="chip">UX Requirements</span>
               </div>
             </div>
           </article>
@@ -485,18 +477,18 @@
           <article class="exp-card" id="exp-dals">
             <div class="exp-card-inner">
               <div class="exp-top">
-                <div class="exp-monogram exp-sm" style="font-size:1.2rem;">🎙️</div>
+                <div class="exp-monogram exp-sm" style="font-size: 0.8rem; font-weight:700;">DALS</div>
                 <div class="exp-info">
                   <h3>Remote Interpreter</h3>
                   <span class="exp-company">Dals, UK</span>
                 </div>
                 <time class="exp-period" datetime="2025">2025 – Present</time>
               </div>
-              <p>Professional Urdu ↔ English interpretation for UK-based clients. Developed precision, cross-cultural communication, and proficiency in remote professional environments.</p>
+              <p>Provided real-time Urdu-to-English translation services under professional, high-attention standards.</p>
               <div class="exp-chips">
-                <span class="chip">Urdu ↔ English</span>
-                <span class="chip">Remote Work</span>
-                <span class="chip">Professional Communication</span>
+                <span class="chip">Urdu / English</span>
+                <span class="chip">Remote Operations</span>
+                <span class="chip">Interpretation</span>
               </div>
             </div>
           </article>
@@ -504,66 +496,62 @@
           <article class="exp-card" id="exp-dispatch">
             <div class="exp-card-inner">
               <div class="exp-top">
-                <div class="exp-monogram exp-sm" style="font-size:1.2rem;">📡</div>
+                <div class="exp-monogram exp-sm" style="font-size: 0.8rem; font-weight:700;">DISP</div>
                 <div class="exp-info">
                   <h3>Dispatcher</h3>
-                  <span class="exp-company">Independent / Side Business</span>
+                  <span class="exp-company">Logistics Operations</span>
                 </div>
                 <time class="exp-period" datetime="2023">2023 – Present</time>
               </div>
-              <p>Currently running dispatching as a side business. This real operational experience is what drives my software focus — I understand the pain points firsthand, which is why I built Load To Cash.</p>
+              <p>Run dispatcher operations. This direct experience was the main source of the problem definition for Load To Cash.</p>
               <div class="exp-chips">
-                <span class="chip">Operations</span>
-                <span class="chip">Carrier Management</span>
-                <span class="chip">Business Insight</span>
+                <span class="chip">Operational Insight</span>
+                <span class="chip">Workflow Mapping</span>
+                <span class="chip">SaaS Definition</span>
               </div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         LOAD TO CASH — HERO PROJECT
-    ============================================================ -->
+    <!-- Load To Cash Case Study -->
     <section id="load-to-cash" class="section ltc-section" aria-labelledby="ltcTitle">
       <div class="ltc-glow" aria-hidden="true"></div>
       <div class="container">
-
-        <div class="section-eyebrow">Hero Project · Case Study</div>
+        <div class="section-eyebrow">Case Study</div>
 
         <div class="ltc-header">
           <div class="ltc-live-badge" role="status">
             <span class="live-pulse" aria-hidden="true"></span>
-            Live Beta
+            Active Beta
           </div>
           <h2 class="section-title ltc-title" id="ltcTitle">Load To Cash</h2>
           <p class="ltc-tagline">
-            An AI-powered SaaS platform that transforms how truck dispatchers manage operations — from rate confirmations to invoices, all in one automated workflow.
+            An AI-powered portal that automates dispatch documentation, invoice creation, and payment monitoring into a unified database workflow.
           </p>
 
           <div class="ltc-meta-row" role="list">
             <div class="ltc-meta-item" role="listitem">
               <span class="meta-label">Status</span>
               <span class="meta-val meta-live">
-                <span class="live-dot" aria-hidden="true"></span> Live Beta
+                <span class="live-dot" aria-hidden="true"></span> Active Beta
               </span>
             </div>
             <div class="ltc-meta-item" role="listitem">
               <span class="meta-label">Beta Users</span>
-              <span class="meta-val">4 Real Users</span>
+              <span class="meta-val">4 Active Testers</span>
             </div>
             <div class="ltc-meta-item" role="listitem">
               <span class="meta-label">Started</span>
               <span class="meta-val">June 2026</span>
             </div>
             <div class="ltc-meta-item" role="listitem">
-              <span class="meta-label">AI Engine</span>
+              <span class="meta-label">Model</span>
               <span class="meta-val">Google Gemini Flash</span>
             </div>
             <div class="ltc-meta-item" role="listitem">
-              <span class="meta-label">Platform</span>
+              <span class="meta-label">Domain</span>
               <span class="meta-val">loadtocash.online</span>
             </div>
           </div>
@@ -576,67 +564,99 @@
         <!-- Problem / Solution -->
         <div class="ps-grid">
           <div class="ps-card ps-problem">
-            <div class="ps-icon" aria-hidden="true">⚠️</div>
+            <div class="ps-svg-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
             <h3>The Problem</h3>
-            <p>Truck dispatchers waste hours every week on manual, repetitive work — entering load data by hand from Rate Confirmations, building invoices in spreadsheets, tracking payments across scattered documents, and analyzing revenue with no dashboard. It's slow, error-prone, and impossible to scale.</p>
+            <p>Dispatchers waste hours manually transferring data from Rate Confirmations into spreadsheets, creating duplicate invoices, and manually updating carrier records. This repetitive loop causes data entry errors and delays operations.</p>
           </div>
           <div class="ps-divider" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
           </div>
           <div class="ps-card ps-solution">
-            <div class="ps-icon" aria-hidden="true">✅</div>
+            <div class="ps-svg-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
             <h3>The Solution</h3>
-            <p>Load To Cash automates the entire workflow. Upload a Rate Confirmation — AI extracts all load data automatically. The platform generates professional invoices, tracks payments, monitors revenue, and gives dispatchers a real-time business dashboard with near-zero manual data entry.</p>
+            <p>Load To Cash automates this sequence. By uploading a PDF Rate Confirmation, the integrated Gemini model extracts fields, automatically populates the database, drafts professional invoices, and updates metrics immediately.</p>
           </div>
         </div>
 
         <!-- Features -->
         <div class="ltc-features">
-          <h3 class="subsection-title">Core Features</h3>
+          <h3 class="subsection-title">Platform Features</h3>
           <div class="features-grid">
             <div class="feat-card" id="feat-ai">
-              <div class="feat-icon" aria-hidden="true">🤖</div>
-              <h4>AI Document Processing</h4>
-              <p>Google Gemini Flash automatically extracts load data from uploaded Rate Confirmations. No manual entry — the AI reads and fills everything.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </div>
+              <h4>AI Text Extraction</h4>
+              <p>Gemini Flash scans documents and returns structured fields to automatically fill databases without manual keys.</p>
             </div>
             <div class="feat-card" id="feat-invoice">
-              <div class="feat-icon" aria-hidden="true">📋</div>
-              <h4>Invoice Generation</h4>
-              <p>Professional invoices auto-generated with company branding, complete load details, dispatch fee calculations, and payment tracking.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <h4>Automatic Invoicing</h4>
+              <p>Creates professional PDFs detailing loads, commission rates, and totals ready for clients in one click.</p>
             </div>
             <div class="feat-card" id="feat-dashboard">
-              <div class="feat-icon" aria-hidden="true">📊</div>
-              <h4>Business Dashboard</h4>
-              <p>Real-time visibility into weekly loads, gross revenue, dispatch fees, and paid vs unpaid amounts. Business performance at a glance.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/>
+                </svg>
+              </div>
+              <h4>Operations Dashboard</h4>
+              <p>Real-time updates of active loads, gross revenue, pending commissions, and payment flags.</p>
             </div>
             <div class="feat-card" id="feat-carriers">
-              <div class="feat-icon" aria-hidden="true">🚛</div>
-              <h4>Carrier Management</h4>
-              <p>Complete carrier history — invoice tracking, payment status, load history, and performance metrics per carrier relationship.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h4>Carrier Directory</h4>
+              <p>Aggregates historical data of carrier rates, loads dispatched, and payment logs.</p>
             </div>
             <div class="feat-card" id="feat-loads">
-              <div class="feat-icon" aria-hidden="true">📁</div>
-              <h4>Load Management</h4>
-              <p>Organize all loads with route info, broker details, confirmation numbers, and pickup dates. No more spreadsheet chaos.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <h4>Load Repository</h4>
+              <p>Keeps dynamic tables sorted by routes, pickup timestamps, brokers, and payout statuses.</p>
             </div>
             <div class="feat-card" id="feat-payments">
-              <div class="feat-icon" aria-hidden="true">💰</div>
-              <h4>Payment Tracking</h4>
-              <p>Clear paid/unpaid status across all carriers and invoices. Know exactly what you're owed and what's been collected.</p>
+              <div class="feat-svg-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h4>Balance Tracking</h4>
+              <p>Provides explicit tracking status to separate paid invoices from pending receivables.</p>
             </div>
           </div>
         </div>
 
         <!-- Screenshots Gallery -->
         <div class="ltc-gallery">
-          <h3 class="subsection-title">Platform Screenshots</h3>
+          <h3 class="subsection-title">Interactive Preview</h3>
 
           <div class="gallery-tabs" role="tablist" aria-label="Platform screenshots">
             <button class="gallery-tab active" data-tab="dashboard" role="tab" aria-selected="true" aria-controls="tab-dashboard" id="tab-btn-dashboard">Dashboard</button>
-            <button class="gallery-tab" data-tab="invoices" role="tab" aria-selected="false" aria-controls="tab-invoices" id="tab-btn-invoices">Invoices</button>
-            <button class="gallery-tab" data-tab="carriers" role="tab" aria-selected="false" aria-controls="tab-carriers" id="tab-btn-carriers">Carrier History</button>
+            <button class="gallery-tab" data-tab="invoices" role="tab" aria-selected="false" aria-controls="tab-invoices" id="tab-btn-invoices">Invoice statements</button>
+            <button class="gallery-tab" data-tab="carriers" role="tab" aria-selected="false" aria-controls="tab-carriers" id="tab-btn-carriers">Carrier records</button>
           </div>
 
           <div class="gallery-panels">
@@ -650,7 +670,7 @@
                 </div>
                 <img src="assets/images/ltc-dashboard.png" alt="Load To Cash Dashboard showing weekly loads, revenue metrics, and the load log table" class="screenshot-img" loading="lazy" />
               </div>
-              <p class="screenshot-caption">Weekly Loads Dashboard — Real-time view of active loads, revenue metrics, and dispatch fee tracking with AI-powered upload.</p>
+              <p class="screenshot-caption">Main dashboard view detailing load aggregates and commission balances.</p>
             </div>
 
             <div class="gallery-panel" id="tab-invoices" role="tabpanel" aria-labelledby="tab-btn-invoices">
@@ -663,7 +683,7 @@
                 </div>
                 <img src="assets/images/ltc-invoices.png" alt="Load To Cash Invoice Statements page showing a professional PDF invoice for a dispatcher" class="screenshot-img" loading="lazy" />
               </div>
-              <p class="screenshot-caption">Invoice Statements — Auto-generated professional invoices with company branding, load summaries, and one-click PDF export.</p>
+              <p class="screenshot-caption">Auto-generated invoice statement interface built to preview fee statements.</p>
             </div>
 
             <div class="gallery-panel" id="tab-carriers" role="tabpanel" aria-labelledby="tab-btn-carriers">
@@ -676,23 +696,23 @@
                 </div>
                 <img src="assets/images/ltc-carriers.png" alt="Load To Cash Carrier History page showing carrier breakdown, invoice history, and payment status" class="screenshot-img" loading="lazy" />
               </div>
-              <p class="screenshot-caption">Carrier History — Complete carrier breakdown with invoice history, paid/unpaid tracking, and performance metrics.</p>
+              <p class="screenshot-caption">Historical records log detailing performance rates across carrier organizations.</p>
             </div>
           </div>
         </div>
 
         <!-- Tech Stack -->
         <div class="ltc-stack">
-          <h3 class="subsection-title">Tech Stack</h3>
+          <h3 class="subsection-title">Technologies</h3>
           <div class="stack-grid">
-            <div class="stack-item"><span aria-hidden="true">⚛️</span> React</div>
-            <div class="stack-item"><span aria-hidden="true">🔷</span> TypeScript</div>
-            <div class="stack-item"><span aria-hidden="true">⚡</span> Vite</div>
-            <div class="stack-item"><span aria-hidden="true">🎨</span> Tailwind CSS</div>
-            <div class="stack-item"><span aria-hidden="true">🗄️</span> Supabase</div>
-            <div class="stack-item"><span aria-hidden="true">🤖</span> Gemini AI</div>
-            <div class="stack-item"><span aria-hidden="true">🌐</span> JavaScript</div>
-            <div class="stack-item"><span aria-hidden="true">🎯</span> HTML / CSS</div>
+            <div class="stack-item">React</div>
+            <div class="stack-item">TypeScript</div>
+            <div class="stack-item">Vite</div>
+            <div class="stack-item">Tailwind CSS</div>
+            <div class="stack-item">Supabase</div>
+            <div class="stack-item">Gemini API</div>
+            <div class="stack-item">JavaScript</div>
+            <div class="stack-item">SQL</div>
           </div>
         </div>
 
@@ -701,21 +721,19 @@
           <div class="lesson-card">
             <h3>Challenges</h3>
             <ul class="lesson-list">
-              <li>Building a full SaaS platform while actively learning React, TypeScript, and Supabase simultaneously</li>
-              <li>Designing an AI integration that accurately extracts data from varied Rate Confirmation formats</li>
-              <li>Implementing secure multi-user authentication with proper data isolation from day one</li>
-              <li>Creating a UI that non-technical dispatchers can use without a learning curve</li>
-              <li>Making product decisions under uncertainty without a team or roadmap</li>
+              <li>Managing multi-entity state tracking while building with React, TypeScript, and Supabase.</li>
+              <li>Tuning AI structured prompts to pull raw details from unstructured Rate Confirmation layouts.</li>
+              <li>Configuring isolated table policies in Supabase to restrict access strictly to company accounts.</li>
+              <li>Keeping UI layouts clean for operations personnel.</li>
             </ul>
           </div>
           <div class="lesson-card">
             <h3>Lessons Learned</h3>
             <ul class="lesson-list">
-              <li>Real users provide feedback that no amount of self-testing can replicate — ship early</li>
-              <li>Product decisions matter more than technical decisions at the early stage</li>
-              <li>AI works best with structured prompts and well-defined output formats</li>
-              <li>Security should be designed in from the start, not retrofitted later</li>
-              <li>Understanding the user's actual workflow before designing any feature is non-negotiable</li>
+              <li>Deploying functional updates early reveals actual usage parameters.</li>
+              <li>Well-defined schemas save hours of frontend interface mapping.</li>
+              <li>Designing systems to easily swap AI models keeps systems modular.</li>
+              <li>Data-first architecture prevents state synchronization errors.</li>
             </ul>
           </div>
         </div>
@@ -724,64 +742,57 @@
         <div class="ltc-roadmap">
           <h3 class="subsection-title">Roadmap</h3>
           <div class="roadmap-grid">
-            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>AI-powered Rate Confirmation extraction</p></div>
-            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Invoice generation &amp; PDF export</p></div>
-            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Carrier history &amp; payment tracking</p></div>
-            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Business dashboard with revenue metrics</p></div>
-            <div class="rm-item rm-beta"><span class="rm-status">⟳</span><p>Beta testing &amp; user feedback loop</p></div>
-            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Advanced analytics &amp; revenue reporting</p></div>
-            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Multi-user team accounts</p></div>
-            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Automated email invoice delivery</p></div>
-            <div class="rm-item rm-future"><span class="rm-status">◇</span><p>Additional AI provider integrations</p></div>
-            <div class="rm-item rm-future"><span class="rm-status">◇</span><p>Mobile-native application</p></div>
+            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>AI Rate Confirmation scans</p></div>
+            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Statement compiler &amp; export</p></div>
+            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Carrier balance logs</p></div>
+            <div class="rm-item rm-done"><span class="rm-status">✓</span><p>Dashboard visualization</p></div>
+            <div class="rm-item rm-beta"><span class="rm-status">⟳</span><p>Active user testing &amp; validation</p></div>
+            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Complex revenue breakdowns</p></div>
+            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Multi-agent team portals</p></div>
+            <div class="rm-item rm-next"><span class="rm-status">→</span><p>Automated email workflows</p></div>
+            <div class="rm-item rm-future"><span class="rm-status">◇</span><p>Interchangeable AI providers</p></div>
+            <div class="rm-item rm-future"><span class="rm-status">◇</span><p>Native mobile container</p></div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- ============================================================
-         OTHER PROJECTS
-    ============================================================ -->
+    <!-- Other Projects -->
     <section id="projects" class="section projects-section" aria-labelledby="projectsTitle">
       <div class="container">
-        <div class="section-eyebrow">Other Projects</div>
+        <div class="section-eyebrow">Other Builds</div>
         <h2 class="section-title" id="projectsTitle">
-          More <span class="text-accent">Delivered Work</span>
+          Delivered Work
         </h2>
 
         <div class="projects-grid">
-
           <article class="project-card" id="project-cef">
             <div class="project-card-inner">
               <div class="project-top">
-                <span class="project-tag">Business Website</span>
+                <span class="project-tag">Web presence</span>
                 <a href="https://criticalexpeditefreightllc.com/" target="_blank" rel="noopener noreferrer" class="project-ext-link" aria-label="Visit Critical Expedite Freight website">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
+                    <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
                   </svg>
                 </a>
               </div>
               <h3>Critical Expedite Freight</h3>
-              <p>Professional web presence for a US-based freight company. Built to establish digital credibility, communicate services clearly, and convert visitors into clients.</p>
+              <p>Professional landing page and brand layout for an expedite freight provider, focused on building operational trust and showing services clearly.</p>
               <div class="project-details">
                 <div class="project-detail-row">
                   <strong>My Role</strong>
-                  <span>Business analysis, front-end development, UI implementation, client communication &amp; feedback</span>
+                  <span>Business analysis, layout structure mapping, frontend coding, and user feedback cycles</span>
                 </div>
                 <div class="project-detail-row">
-                  <strong>Business Impact</strong>
-                  <span>Established professional online presence, improved digital credibility for the freight business</span>
+                  <strong>Impact</strong>
+                  <span>Helped establish professional credibility for logistics customer onboarding</span>
                 </div>
               </div>
               <div class="project-footer">
                 <div class="project-chips">
                   <span class="chip chip-sm">HTML / CSS</span>
                   <span class="chip chip-sm">JavaScript</span>
-                  <span class="chip chip-sm">UI/UX</span>
-                  <span class="chip chip-sm">Responsive</span>
+                  <span class="chip chip-sm">Layout Design</span>
                 </div>
                 <a href="https://criticalexpeditefreightllc.com/" target="_blank" rel="noopener noreferrer" class="project-visit-link">Visit Site →</a>
               </div>
@@ -791,61 +802,53 @@
           <article class="project-card" id="project-awl">
             <div class="project-card-inner">
               <div class="project-top">
-                <span class="project-tag">Business Website</span>
+                <span class="project-tag">Web presence</span>
                 <a href="https://advancewaylogistics.com/" target="_blank" rel="noopener noreferrer" class="project-ext-link" aria-label="Visit Advance Way Logistics website">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
+                    <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
                   </svg>
                 </a>
               </div>
               <h3>Advance Way Logistics</h3>
-              <p>Modern, professional website for a logistics company focused on building trust, communicating reliability, and converting potential clients into long-term partners.</p>
+              <p>Corporate landing layout for an asset-backed carrier organization, designed to cleanly communicate freight capacity and route options.</p>
               <div class="project-details">
                 <div class="project-detail-row">
                   <strong>My Role</strong>
-                  <span>Business requirement analysis, website structure planning, front-end development, UX improvements</span>
+                  <span>Workflow analysis, custom landing layouts, interface refinement, and responsive alignment</span>
                 </div>
                 <div class="project-detail-row">
-                  <strong>Business Impact</strong>
-                  <span>Modern digital presence that reflects professionalism and builds client confidence in the company</span>
+                  <strong>Impact</strong>
+                  <span>Gave logistics team a professional digital layout to present during shipper bidding</span>
                 </div>
               </div>
               <div class="project-footer">
                 <div class="project-chips">
                   <span class="chip chip-sm">HTML / CSS</span>
                   <span class="chip chip-sm">JavaScript</span>
-                  <span class="chip chip-sm">UI/UX</span>
                   <span class="chip chip-sm">Responsive</span>
                 </div>
                 <a href="https://advancewaylogistics.com/" target="_blank" rel="noopener noreferrer" class="project-visit-link">Visit Site →</a>
               </div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         SKILLS
-    ============================================================ -->
+    <!-- Skills -->
     <section id="skills" class="section skills-section" aria-labelledby="skillsTitle">
       <div class="container">
         <div class="section-eyebrow">Skills</div>
         <h2 class="section-title" id="skillsTitle">
-          Honest <span class="text-accent">Skill Assessment</span>
+          Core Competency
         </h2>
-        <p class="section-sub">I believe in authenticity. No inflated claims, no false expertise. Here's where I genuinely stand — and where I'm actively growing.</p>
+        <p class="section-sub">Authentic representation of my skills. I focus on logical principles so I can adapt to any technical environment quickly.</p>
 
         <div class="skills-layout">
-
           <!-- Core Skills -->
           <div class="skills-col">
-            <h3 class="skills-group-heading">Programming</h3>
+            <h3 class="skills-group-heading">Languages &amp; Logic</h3>
             <div class="skill-bars">
-
               <div class="skill-bar-item">
                 <div class="skill-top">
                   <span class="skill-name">Python</span>
@@ -854,48 +857,18 @@
                 <div class="skill-track" role="progressbar" aria-label="Python skill level: Strong" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
                   <div class="skill-fill" data-width="82"></div>
                 </div>
-                <p class="skill-desc">Solid fundamentals, OOP, data structures, problem-solving. Academic + practical exercises and automation scripts.</p>
+                <p class="skill-desc">Solid OOP, structural data handling, and automation scripts.</p>
               </div>
 
               <div class="skill-bar-item">
                 <div class="skill-top">
-                  <span class="skill-name">HTML</span>
-                  <span class="skill-badge badge-strong">Strong</span>
-                </div>
-                <div class="skill-track" role="progressbar" aria-label="HTML skill level: Strong" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-                  <div class="skill-fill" data-width="88"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar-item">
-                <div class="skill-top">
-                  <span class="skill-name">OOP</span>
-                  <span class="skill-badge badge-strong">Strong</span>
-                </div>
-                <div class="skill-track" role="progressbar" aria-label="OOP skill level: Strong" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
-                  <div class="skill-fill" data-width="82"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar-item">
-                <div class="skill-top">
-                  <span class="skill-name">CSS</span>
-                  <span class="skill-badge badge-good">Good</span>
-                </div>
-                <div class="skill-track" role="progressbar" aria-label="CSS skill level: Good" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                  <div class="skill-fill" data-width="72"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar-item">
-                <div class="skill-top">
-                  <span class="skill-name">SQL (MySQL / PostgreSQL)</span>
+                  <span class="skill-name">SQL (PostgreSQL / MySQL)</span>
                   <span class="skill-badge badge-good">Good</span>
                 </div>
                 <div class="skill-track" role="progressbar" aria-label="SQL skill level: Good" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                   <div class="skill-fill" data-width="70"></div>
                 </div>
-                <p class="skill-desc">Database design, CRUD, relationships, queries. Used with MySQL and Supabase (PostgreSQL).</p>
+                <p class="skill-desc">Database planning, relation structures, and key queries.</p>
               </div>
 
               <div class="skill-bar-item">
@@ -903,24 +876,22 @@
                   <span class="skill-name">JavaScript</span>
                   <span class="skill-badge badge-inter">Intermediate</span>
                 </div>
-                <div class="skill-track" role="progressbar" aria-label="JavaScript skill level: Intermediate" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  <div class="skill-fill" data-width="60"></div>
+                <div class="skill-track" role="progressbar" aria-label="JavaScript skill level: Intermediate" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-fill" data-width="65"></div>
                 </div>
-                <p class="skill-desc">Used in modern web development. Most complex project: Load To Cash.</p>
+                <p class="skill-desc">Applied in modern web interfaces. Used extensively in Load To Cash.</p>
               </div>
-
             </div>
           </div>
 
           <!-- Learning Stack -->
           <div class="skills-col">
-            <h3 class="skills-group-heading">Actively Learning</h3>
-            <p class="learning-context">These are technologies I'm mastering through real-world SaaS development — not tutorials. Learning by building is the fastest way I know.</p>
+            <h3 class="skills-group-heading">Active Learning</h3>
+            <p class="learning-context">Technologies I'm actively applying to build products and SaaS tools.</p>
 
             <div class="learning-grid">
               <div class="learning-item">
                 <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">⚛️</span>
                   <span class="learning-name">React</span>
                   <span class="learning-pct">55%</span>
                 </div>
@@ -930,7 +901,6 @@
               </div>
               <div class="learning-item">
                 <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">🔷</span>
                   <span class="learning-name">TypeScript</span>
                   <span class="learning-pct">45%</span>
                 </div>
@@ -940,27 +910,6 @@
               </div>
               <div class="learning-item">
                 <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">⚡</span>
-                  <span class="learning-name">Vite</span>
-                  <span class="learning-pct">50%</span>
-                </div>
-                <div class="learning-track">
-                  <div class="learning-fill" data-width="50"></div>
-                </div>
-              </div>
-              <div class="learning-item">
-                <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">🎨</span>
-                  <span class="learning-name">Tailwind CSS</span>
-                  <span class="learning-pct">60%</span>
-                </div>
-                <div class="learning-track">
-                  <div class="learning-fill" data-width="60"></div>
-                </div>
-              </div>
-              <div class="learning-item">
-                <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">🗄️</span>
                   <span class="learning-name">Supabase</span>
                   <span class="learning-pct">55%</span>
                 </div>
@@ -968,173 +917,148 @@
                   <div class="learning-fill" data-width="55"></div>
                 </div>
               </div>
-              <div class="learning-item">
-                <div class="learning-top">
-                  <span class="learning-icon" aria-hidden="true">🌿</span>
-                  <span class="learning-name">Node.js</span>
-                  <span class="learning-pct">30%</span>
-                </div>
-                <div class="learning-track">
-                  <div class="learning-fill" data-width="30"></div>
-                </div>
-              </div>
             </div>
 
-            <h3 class="skills-group-heading" style="margin-top:2.5rem;">Additional</h3>
+            <h3 class="skills-group-heading" style="margin-top:2.5rem;">Concepts</h3>
             <div class="add-skills-wrap">
               <span class="add-skill">AWS Fundamentals</span>
               <span class="add-skill">Cloud Deployment</span>
               <span class="add-skill">Web Hosting</span>
-              <span class="add-skill">DNS Management</span>
-              <span class="add-skill">Business Analysis</span>
-              <span class="add-skill">Product Planning</span>
-              <span class="add-skill">AI-assisted Development</span>
-              <span class="add-skill">UI/UX Thinking</span>
-              <span class="add-skill">Software Security</span>
+              <span class="add-skill">DNS Configuration</span>
+              <span class="add-skill">Business Logic mapping</span>
+              <span class="add-skill">Product Design</span>
+              <span class="add-skill">AI Development workflows</span>
+              <span class="add-skill">UI/UX Layouts</span>
+              <span class="add-skill">Data Isolation</span>
               <span class="add-skill">SaaS Architecture</span>
-              <span class="add-skill">Deployment Workflow</span>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         TOOLS
-    ============================================================ -->
+    <!-- Tools -->
     <section id="tools" class="section tools-section" aria-labelledby="toolsTitle">
       <div class="container">
-        <div class="section-eyebrow">Tools</div>
+        <div class="section-eyebrow">Workspace</div>
         <h2 class="section-title" id="toolsTitle">
-          My <span class="text-accent">Modern Workflow</span>
+          Workflow Tools
         </h2>
 
         <div class="tools-grid">
           <div class="tool-card" id="tool-vscode">
-            <div class="tool-icon" aria-hidden="true">📝</div>
             <span class="tool-name">VS Code</span>
           </div>
           <div class="tool-card" id="tool-github">
-            <div class="tool-icon" aria-hidden="true">🐙</div>
             <span class="tool-name">GitHub</span>
           </div>
           <div class="tool-card" id="tool-cursor">
-            <div class="tool-icon" aria-hidden="true">🖱️</div>
             <span class="tool-name">Cursor</span>
           </div>
           <div class="tool-card" id="tool-chatgpt">
-            <div class="tool-icon" aria-hidden="true">💬</div>
             <span class="tool-name">ChatGPT</span>
           </div>
           <div class="tool-card" id="tool-claude">
-            <div class="tool-icon" aria-hidden="true">🧠</div>
             <span class="tool-name">Claude</span>
           </div>
           <div class="tool-card" id="tool-gemini">
-            <div class="tool-icon" aria-hidden="true">✨</div>
             <span class="tool-name">Gemini</span>
           </div>
           <div class="tool-card" id="tool-figma">
-            <div class="tool-icon" aria-hidden="true">🎨</div>
             <span class="tool-name">Figma</span>
           </div>
           <div class="tool-card" id="tool-canva">
-            <div class="tool-icon" aria-hidden="true">🖼️</div>
             <span class="tool-name">Canva</span>
-          </div>
-          <div class="tool-card" id="tool-capcut">
-            <div class="tool-icon" aria-hidden="true">🎬</div>
-            <span class="tool-name">CapCut</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         WHAT MAKES ME DIFFERENT
-    ============================================================ -->
+    <!-- What Makes Me Different -->
     <section id="differentiators" class="section diff-section" aria-labelledby="diffTitle">
       <div class="container">
         <div class="section-eyebrow">The Difference</div>
         <h2 class="section-title" id="diffTitle">
-          Why I'm <span class="text-accent">worth your time</span>
+          Why I'm worth your time
         </h2>
-        <p class="diff-intro">There are developers who can code. There are business people who can talk. I'm learning to be both — and the business side is already grounded in real experience, not theory.</p>
+        <p class="diff-intro">I combine logistics domain context with a systematic approach to software development.</p>
 
         <div class="diff-grid">
           <article class="diff-card diff-large" id="diff-1">
             <div class="diff-num" aria-hidden="true">01</div>
-            <h3>I've Lived the Problem</h3>
-            <p>I didn't read about logistics inefficiency in a case study. I managed loads, negotiated rates, and dealt with the exact manual workflows that Load To Cash now automates. That firsthand context changes everything about how I approach building software — the empathy is real, not assumed.</p>
+            <h3>Lived Logistics Bottlenecks</h3>
+            <p>I operated inside freight dispatch and brokerage daily. I don't guess what problems exist—I've manually handled the invoices, rate sheets, and carrier details myself. This operational experience allows me to build solutions that address actual user pain points directly.</p>
           </article>
           <article class="diff-card" id="diff-2">
             <div class="diff-num" aria-hidden="true">02</div>
-            <h3>Business Before Code</h3>
-            <p>My first question is always "what problem does this solve and for whom?" — not "what framework should I use?" The technology follows the problem, not the other way around.</p>
+            <h3>Functionality First</h3>
+            <p>I focus on defining the business problem and mapping user flows before starting code files. Solving the real operational bottleneck is always my primary goal.</p>
           </article>
           <article class="diff-card" id="diff-3">
             <div class="diff-num" aria-hidden="true">03</div>
-            <h3>Rapid Learning Ability</h3>
-            <p>Strong logic fundamentals mean I can pick up new tools quickly. Load To Cash was built while simultaneously learning React, TypeScript, and Supabase in a production environment.</p>
+            <h3>Logical Foundations</h3>
+            <p>A strong grasp of OOP and computer science fundamentals enables me to adopt frameworks quickly. I built Load To Cash by applying these concepts directly to React and Supabase.</p>
           </article>
           <article class="diff-card" id="diff-4">
             <div class="diff-num" aria-hidden="true">04</div>
-            <h3>AI-Native Thinking</h3>
-            <p>I don't just use AI tools — I integrate them into products thoughtfully. Load To Cash uses Gemini for document automation with an architecture designed to swap AI providers as the ecosystem evolves.</p>
+            <h3>Pragmatic AI</h3>
+            <p>I use AI to handle repetitive text tasks. Load To Cash integrates Gemini Flash to extract fields from documents, with a clean architecture ready for model swapping.</p>
           </article>
           <article class="diff-card" id="diff-5">
             <div class="diff-num" aria-hidden="true">05</div>
-            <h3>Real Users, Real Feedback</h3>
-            <p>Load To Cash isn't a demo project. It has real beta users providing real feedback that shapes every product and development decision. I understand the difference between building and shipping.</p>
+            <h3>User Validation</h3>
+            <p>My SaaS product is being actively tested by real dispatch users. Operating in beta allows me to refine features based on real workflow demands.</p>
           </article>
           <article class="diff-card diff-large" id="diff-6">
             <div class="diff-num" aria-hidden="true">06</div>
-            <h3>Authenticity Over Claims</h3>
-            <p>I show honest skill levels and explain what I'm still learning. That transparency isn't weakness — it's a signal of professional maturity and self-awareness. Developers who overstate their skills are a liability. Developers who know exactly where they stand and grow intentionally are an asset.</p>
+            <h3>Honest Progression</h3>
+            <p>I present my skills transparently. Demonstrating exactly what I've mastered and what I'm actively learning builds professional trust and shows a commitment to authentic growth.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         EDUCATION
-    ============================================================ -->
+    <!-- Education -->
     <section id="education" class="section edu-section" aria-labelledby="eduTitle">
       <div class="container">
         <div class="edu-card" id="eduCard">
-          <div class="edu-icon" aria-hidden="true">🎓</div>
+          <div class="edu-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+          </div>
           <div class="edu-content">
             <h2 id="eduTitle">Bachelor of Information Technology</h2>
             <p class="edu-uni">University of Lahore</p>
             <time class="edu-period" datetime="2023/2027">2023 – Expected 2027</time>
-            <p class="edu-note">Combining academic IT foundations with real-world software development. I learn by building, not by collecting certificates. Every semester, my coursework feeds directly into live projects.</p>
+            <p class="edu-note">Integrating academic computer science foundations directly with hands-on software development. Focused on programming principles, database architecture, and network fundamentals.</p>
           </div>
           <div class="edu-badge">
             <span class="edu-year">2027</span>
-            <span class="edu-year-label">Expected Graduation</span>
+            <span class="edu-year-label">Graduation</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         CONTACT
-    ============================================================ -->
+    <!-- Contact -->
     <section id="contact" class="section contact-section" aria-labelledby="contactTitle">
       <div class="contact-glow" aria-hidden="true"></div>
       <div class="container">
         <div class="contact-wrapper">
           <div class="section-eyebrow">Contact</div>
           <h2 class="section-title" id="contactTitle">
-            Let's <span class="text-accent">work together</span>
+            Let's work together
           </h2>
-          <p class="contact-desc">Whether you're building something new, looking for a developer who understands business problems, or want to discuss ideas around AI, SaaS, or automation — I'd love to hear from you.</p>
+          <p class="contact-desc">If you are looking for a developer who understands business context and builds functional solutions, I'd love to connect.</p>
 
           <div class="contact-cards">
-
             <a href="mailto:abdullahbinyousaf20@gmail.com" class="contact-card contact-card-primary" id="contactEmail">
-              <div class="cc-icon" aria-hidden="true">✉️</div>
+              <div class="cc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
               <div class="cc-info">
                 <span class="cc-label">Email</span>
                 <span class="cc-value">abdullahbinyousaf20@gmail.com</span>
@@ -1144,8 +1068,8 @@
 
             <a href="https://github.com/abdullahh23" target="_blank" rel="noopener noreferrer" class="contact-card" id="contactGitHub">
               <div class="cc-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                 </svg>
               </div>
               <div class="cc-info">
@@ -1156,7 +1080,11 @@
             </a>
 
             <div class="contact-card contact-card-disabled" id="contactLinkedIn" aria-label="LinkedIn profile coming soon">
-              <div class="cc-icon" aria-hidden="true">💼</div>
+              <div class="cc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
               <div class="cc-info">
                 <span class="cc-label">LinkedIn</span>
                 <span class="cc-value cc-soon">Coming soon</span>
@@ -1165,14 +1093,17 @@
             </div>
 
             <a href="https://loadtocash.online/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contactLTC">
-              <div class="cc-icon" aria-hidden="true">🚀</div>
+              <div class="cc-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
               <div class="cc-info">
-                <span class="cc-label">Live Product</span>
+                <span class="cc-label">Live Platform</span>
                 <span class="cc-value">loadtocash.online</span>
               </div>
               <span class="cc-arrow" aria-hidden="true">→</span>
             </a>
-
           </div>
 
           <p class="contact-location">
@@ -1180,7 +1111,7 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
-            Based in Lahore, Pakistan &nbsp;·&nbsp; Available for remote work globally
+            Based in Lahore, Pakistan · Available for remote work
           </p>
         </div>
       </div>
@@ -1188,9 +1119,7 @@
 
   </main>
 
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
+  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
@@ -1204,7 +1133,7 @@
           <a href="mailto:abdullahbinyousaf20@gmail.com">Email</a>
           <a href="https://loadtocash.online/" target="_blank" rel="noopener noreferrer">Load To Cash</a>
         </nav>
-        <p class="footer-copy">© 2026 Abdullah Bin Yousaf. Built with intention.</p>
+        <p class="footer-copy">© 2026 Abdullah Bin Yousaf. All rights reserved.</p>
       </div>
     </div>
   </footer>

@@ -580,90 +580,100 @@ body:has(button:hover) .cursor {
   flex-shrink: 0;
 }
 
-/* Avatar */
-.hero-visual {
+/* Avatar Card Visual */
+.avatar-card-wrapper {
   position: relative;
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
 }
-.avatar-ring-outer {
+.avatar-card-glow {
   position: absolute;
-  width: 320px; height: 320px;
-  border-radius: 50%;
-  border: 1px solid rgba(59,130,246,0.15);
-  animation: ringRotate 20s linear infinite;
+  width: 105%;
+  height: 105%;
+  background: radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 60%);
+  filter: blur(40px);
+  z-index: 0;
+  opacity: 0.85;
 }
-.avatar-ring-inner {
-  position: absolute;
-  width: 260px; height: 260px;
-  border-radius: 50%;
-  border: 1px dashed rgba(59,130,246,0.1);
-  animation: ringRotate 12s linear infinite reverse;
-}
-@keyframes ringRotate { to { transform: rotate(360deg); } }
-.avatar-frame {
+.avatar-card {
   position: relative;
-  width: 200px; height: 200px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(29,78,216,0.2) 0%, rgba(59,130,246,0.1) 100%);
-  border: 2px solid rgba(59,130,246,0.3);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  width: 320px;
+  background: rgba(13, 13, 13, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.6s var(--ease-out), border-color var(--t);
   z-index: 1;
-  animation: avatarFloat 6s ease-in-out infinite;
 }
-@keyframes avatarFloat {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+.avatar-card:hover {
+  transform: rotateY(6deg) rotateX(6deg) translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.4);
 }
-.avatar-initials {
-  text-align: center;
+.avatar-image-container {
+  width: 100%;
+  aspect-ratio: 0.85;
+  overflow: hidden;
+  background: #111;
+  position: relative;
 }
-.avatar-text {
-  display: block;
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s var(--ease-out);
+}
+.avatar-card:hover .avatar-img {
+  transform: scale(1.04);
+}
+.avatar-card-footer {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.acf-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+}
+.acf-title {
   font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  background: linear-gradient(135deg, #fff 0%, var(--blue) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-1);
 }
-.avatar-sub {
-  display: block;
-  font-size: 0.55rem;
+.acf-sub {
+  font-size: 0.72rem;
   color: var(--text-3);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 0.35rem;
 }
-
-/* Floating badges */
-.float-badge {
-  position: absolute;
-  background: rgba(15,15,15,0.85);
-  border: 1px solid var(--border-hover);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+.acf-status {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(74, 222, 128, 0.06);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  padding: 0.3rem 0.65rem;
+  border-radius: 99px;
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--text-1);
-  padding: 0.4rem 0.75rem;
-  border-radius: 8px;
-  white-space: nowrap;
-  animation: badgeFloat 5s ease-in-out infinite;
-  z-index: 2;
+  color: #4ade80;
 }
-.badge-react  { top: -10px; left: -30px;  animation-delay: 0s; }
-.badge-python { top: 30px;  right: -50px; animation-delay: -1.5s; }
-.badge-ai     { bottom: 20px; left: -50px; animation-delay: -3s; }
-.badge-ltc    { bottom: -10px; right: -30px; animation-delay: -4.5s; }
-@keyframes badgeFloat {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+.acf-pulse {
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 /* Scroll hint */
@@ -1661,7 +1671,52 @@ body:has(button:hover) .cursor {
 
 @media (max-width: 480px) {
   :root { --section-gap: 4rem; }
-  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { gap: 1rem; }
   .stat-sep { height: 28px; }
 }
+
+/* Custom SVG Wrapper icons */
+.trait-svg-wrap, .ps-svg-wrap, .feat-svg-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  color: var(--blue-light);
+  margin-bottom: 1rem;
+  transition: background var(--t), border-color var(--t), color var(--t);
+}
+.trait-card:hover .trait-svg-wrap,
+.ps-card:hover .ps-svg-wrap,
+.feat-card:hover .feat-svg-wrap {
+  background: var(--blue-glow2);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #fff;
+}
+.ps-svg-wrap { margin-bottom: 1.25rem; }
+.feat-svg-wrap { width: 36px; height: 36px; margin-bottom: 0.75rem; border-radius: 8px; }
+
+/* Mobile layout adjustments for visual card */
+@media (max-width: 1024px) {
+  .hero-visual {
+    display: flex !important;
+    margin-top: 2rem;
+    order: -1; /* Display photo above content on small screens for better hierarchy */
+  }
+  .avatar-card-wrapper {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 480px) {
+  .avatar-card-wrapper {
+    transform: scale(0.8);
+  }
+  .hero-container {
+    padding: 2rem var(--pad);
+  }
+}
+
